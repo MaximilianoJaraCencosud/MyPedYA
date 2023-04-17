@@ -1,9 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import { useAuth } from "../../context/authContext";
+import { useState } from "react";
 
 const Login = () => {
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+  const { login } = useAuth();
+  const navigate = useNavigate();
+  const [error, setError] = useState();
+
+  const handleChange = ({ target: { name, value } }) => {
+    setUser({ ...user, [name]: value });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await login(user.email, user.password);
+      navigate("/");
+    } catch (error) {
+      if (error.code === "auth/wrong-password") {
+        setError("Las credenciales no coinciden con nuestra base de datos ");
+      } else if (error.code === "auth/user-not-found") {
+        setError("Usuario no encontrado");
+      } else if (error.code === "auth/email-already-in-use") {
+        setError("Correo electronico ya esta en uso");
+      }
+    }
+  };
   return (
     <div>
       <Header />
@@ -30,15 +59,19 @@ const Login = () => {
               <div className="card-body">
                 <div className="form-control">
                   <input
-                    type="text"
+                    type="email"
+                    name="email"
                     placeholder="Correo electronico"
+                    onChange={handleChange}
                     className="input input-bordered bg-white/80 text-black placeholder-black/50"
                   />
                 </div>
                 <div className="form-control">
                   <input
-                    type="text"
+                    type="password"
+                    name="password"
                     placeholder="Contraseña"
+                    onChange={handleChange}
                     className="input input-bordered bg-white/80 text-black placeholder-black/50"
                   />
 
@@ -50,8 +83,12 @@ const Login = () => {
                   </Link>
                 </div>
                 <Link to="/">
-                  <div className="form-control mt-6">
-                    <button className="btn btn-primary bg-red-600">
+                  <div className="form-control mt-3">
+                    {error && <p className="text-black pb-3">{error}</p>}
+                    <button
+                      className="btn btn-primary bg-red-600"
+                      onClick={handleSubmit}
+                    >
                       Disfruta
                     </button>
                   </div>
