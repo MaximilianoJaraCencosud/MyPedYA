@@ -17,6 +17,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="list" element={<List />} />
             <Route path="help" element={<NotImplemented />} />
+            <Route path="profile" element={<NotImplemented />} />
+
             <Route path="newLocal" element={<RegisterLocal />} />
             <Route path="/*" element={<Error404 />} />
             <Route path="login" element={<Login />} />

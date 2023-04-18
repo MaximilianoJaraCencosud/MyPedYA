@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/authContext";
 
 const Header = () => {
+  const { user, logout, loading } = useAuth();
+  console.log(user);
+  const handleLogout = async () => {
+    await logout();
+  };
   return (
     <div>
       <div className="navbar bg-white">
@@ -23,6 +29,12 @@ const Header = () => {
             <div className="dropdown dropdown-end mr-10">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
+                  {loading && (
+                    <img src="https://i.pinimg.com/280x280_RS/42/03/a5/4203a57a78f6f1b1cc8ce5750f614656.jpg"></img>
+                  )}
+                  {user && (
+                    <img src="https://img.freepik.com/foto-gratis/mujer-hermosa-joven-mirando-camara-chica-moda-verano-casual-camiseta-blanca-pantalones-cortos-hembra-positiva-muestra-emociones-faciales-modelo-divertido-aislado-amarillo_158538-15796.jpg"></img>
+                  )}
                   <img src="https://img.pystatic.com/social_image.png" />
                 </div>
               </label>
@@ -40,13 +52,33 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/login" className="text-black">
-                    <img
-                      className="h-8 w-8"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3erXIA-EjSG5aMz8f3quCirBLLQ7AmD_d9e5XXhgTSIxZdeb51FcTjCE8VpGtsgSSHaM&usqp=CAU"
-                    ></img>
-                    Iniciar sesión / Registrarse
-                  </Link>
+                  {user && (
+                    <Link to="/profile" className="text-black">
+                      <img
+                        className="h-8 w-8"
+                        src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+                      ></img>
+                      Perfil
+                    </Link>
+                  )}
+                  {user && (
+                    <button onClick={handleLogout} className="text-black">
+                      <img
+                        className="h-8 w-8"
+                        src="https://static.vecteezy.com/system/resources/previews/012/937/876/non_2x/exit-door-icon-vector.jpg"
+                      ></img>
+                      Cerrar sesión
+                    </button>
+                  )}
+                  {!user && (
+                    <Link to="/login" className="text-black">
+                      <img
+                        className="h-8 w-8"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3erXIA-EjSG5aMz8f3quCirBLLQ7AmD_d9e5XXhgTSIxZdeb51FcTjCE8VpGtsgSSHaM&usqp=CAU"
+                      ></img>
+                      Iniciar sesión / Registrarse
+                    </Link>
+                  )}
                 </li>
               </ul>
             </div>

@@ -75,10 +75,7 @@ const Login = () => {
                     className="input input-bordered bg-white/80 text-black placeholder-black/50"
                   />
 
-                  <Link
-                    to="/register"
-                    className=" mt-3 text-red-600 link-hover"
-                  >
+                  <Link to="/register" className=" mt-3 text-red-600 link">
                     No tienes cuenta? ¡Registrate!
                   </Link>
                 </div>
