@@ -53,9 +53,7 @@ const RegisterUser = () => {
                   Con tus datos y con un simple click podras tener todo al
                   alcance de tu mano.
                 </p>
-                <p className="py-1 text-2xl text-white">
-                  ¡En caso de todavia no tener tu cuenta registrate ahora!
-                </p>
+                <p className="py-1 text-2xl text-white">¡Registrate ahora!</p>
               </div>
               <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white/60">
                 <div className="card-body">

@@ -4,7 +4,6 @@ import { useAuth } from "../context/authContext";
 
 const Header = () => {
   const { user, logout, loading } = useAuth();
-  console.log(user);
   const handleLogout = async () => {
     await logout();
   };
@@ -29,13 +28,13 @@ const Header = () => {
             <div className="dropdown dropdown-end mr-10">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
-                  {loading && (
+                  {loading ? (
                     <img src="https://i.pinimg.com/280x280_RS/42/03/a5/4203a57a78f6f1b1cc8ce5750f614656.jpg"></img>
+                  ) : user?.photoURL ? (
+                    <img src={`${user?.photoURL}`} />
+                  ) : (
+                    <img src="https://mammadontpreach.files.wordpress.com/2017/07/captura-de-pantalla-2017-07-21-a-las-12-07-49-a-m.png" />
                   )}
-                  {user && (
-                    <img src="https://img.freepik.com/foto-gratis/mujer-hermosa-joven-mirando-camara-chica-moda-verano-casual-camiseta-blanca-pantalones-cortos-hembra-positiva-muestra-emociones-faciales-modelo-divertido-aislado-amarillo_158538-15796.jpg"></img>
-                  )}
-                  <img src="https://img.pystatic.com/social_image.png" />
                 </div>
               </label>
               <ul
