@@ -1,10 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer footer-center p-10 bg-white text-base-content rounded">
       <div className="grid grid-flow-col gap-4">
-        <a className="link link-hover text-red-600">Quiénes somos</a>
+        <Link
+          to="https://www.linkedin.com/in/maximiliano-jara-marco-8846a0240/"
+          className="link link-hover text-red-600"
+        >
+          Quiénes somos
+        </Link>
         <a className="link link-hover text-red-600">Términos y condiciones</a>
         <a className="link link-hover text-red-600">Sé parte de PedidosYA</a>
         <a className="link link-hover text-red-600">Centro de Socios</a>

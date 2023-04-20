@@ -1,0 +1,65 @@
+[
+  {
+    "foodImage": "https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "restaurantImage": "https://www.mcdonalds.com.uy/uploads/logo_mc_donald_s_3x_91ed76038c.png",
+    "foodName": "Hamburguesas doble carne",
+    "restaurantName": " Mc Donalds",
+    "sendTime": "30 - 40 min · Envío $15"
+  },
+  {
+    "foodImage": "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "restaurantImage": "https://logodownload.org/wp-content/uploads/2015/02/burger-king-logo-0.png",
+    "foodName": "Hamburguesas con papas",
+    "restaurantName": "Burger King",
+    "sendTime": "15 - 20 min · Envío $65"
+  },
+  {
+    "foodImage": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "restaurantImage": "https://image.spreadshirtmedia.net/image-server/v1/products/T1459A839PA4459PT28D188052685W10000H4622/views/1,width=550,height=550,appearanceId=839,backgroundColor=F2F2F2/juan-custom-text-birthday-name-sticker.jpg",
+    "foodName": "Waffles con dulce de leche",
+    "restaurantName": "Panaderia Juan",
+    "sendTime": "15 - 30 min · Envío Gratis"
+  },
+  {
+    "foodImage": "https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "restaurantImage": "https://image.spreadshirtmedia.net/image-server/v1/products/T1459A839PA4459PT28D188052685W10000H4622/views/1,width=550,height=550,appearanceId=839,backgroundColor=F2F2F2/juan-custom-text-birthday-name-sticker.jpg",
+    "foodName": "Costillar de cerdo",
+    "restaurantName": "Costillitas",
+    "sendTime": "15 - 30 min · Envío $45"
+  },
+  {
+    "foodImage": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "restaurantImage": "https://img.freepik.com/vector-premium/idea-diseno-logotipo-espagueti-italiano-tenedor-pasta-simbolo-restaurante-italiano-vector-comida_444665-5.jpg?w=2000",
+    "foodName": "Fideos con tuco ",
+    "restaurantName": "Premium Quality",
+    "sendTime": "10 - 30 min · Envío $30"
+  },
+  {
+    "foodImage": "https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "restaurantImage": "https://img.freepik.com/vector-premium/logotipo-cafeteria-restaurante-sopa-simbolo-cocina_18099-2688.jpg",
+    "foodName": "Sopa de calabaza",
+    "restaurantName": "Sopanas",
+    "sendTime": "30 - 60 min · Envío Gratis"
+  },
+  {
+    "foodImage": "https://images.pexels.com/photos/1571075/pexels-photo-1571075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "restaurantImage": "https://img.freepik.com/vector-premium/diseno-logo-panaderia_260747-389.jpg?w=2000",
+    "foodName": "Pan recien horneado",
+    "restaurantName": "Pansitos Calentitos",
+    "sendTime": "5 - 10 min · Envío $60 "
+  },
+  {
+    "foodImage": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "restaurantImage": "https://img.freepik.com/vector-premium/diseno-logo-panaderia_260747-389.jpg?w=2000",
+    "foodName": "Tacos mexicanos",
+    "restaurantName": "Tacos Locos",
+    "sendTime": "20 - 25 min · Envío $20"
+  },
+  {
+    "foodImage": "https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "restaurantImage": "https://us.123rf.com/450wm/abdie11/abdie112104/abdie11210400029/167985699-logotipo-de-pizza-de-fusi%C3%B3n-restaurante-pizzer%C3%ADa-con-ilustraci%C3%B3n-de-plantilla-de-icono-de-logotipo.jpg?ver=6",
+    "foodName": "Pizza",
+    "restaurantName": "Ananasi",
+    "sendTime": "20 - 30 min · Envío $10"
+  }
+]

@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/authContext";
 
 const Princial = () => {
+  const { user } = useAuth();
   return (
     <div>
       <div
@@ -19,11 +21,31 @@ const Princial = () => {
             <p className="mb-5 text-white">
               Restaurantes, mercados, farmacias, kioscos y mucho más.
             </p>
-            <Link to="/list">
-              <button className="btn btn-block  text-white bg-black/70 ">
+            {user && (
+              <Link to="/list">
+                <button className="btn btn-block text-white bg-black/70">
+                  ¡Ve nuestras opciones!
+                </button>
+              </Link>
+            )}
+            {!user && (
+              <label
+                htmlFor="my-modal-4"
+                className="btn btn-block text-white bg-black/70"
+              >
                 ¡Ve nuestras opciones!
-              </button>
-            </Link>
+              </label>
+            )}
+            <input type="checkbox" id="my-modal-4" className="modal-toggle" />
+            <label htmlFor="my-modal-4" className="modal cursor-pointer">
+              <label className="modal-box relative  bg-white " htmlFor="">
+                <h3 className="text-lg font-bold text-black/70">
+                  Para disfrutar de todas nuestras opciones recuerda de ingresar
+                  con tu cuenta, en caso de no tener una registrarte es
+                  extremadamente sencillo!
+                </h3>
+              </label>
+            </label>
           </div>
         </div>
       </div>
