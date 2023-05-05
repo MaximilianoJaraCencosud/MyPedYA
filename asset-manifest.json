@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MyPedYA/static/css/main.1827b88f.css",
-    "main.js": "/MyPedYA/static/js/main.03f6eb91.js",
+    "main.css": "/MyPedYA/static/css/main.1f5c0a82.css",
+    "main.js": "/MyPedYA/static/js/main.762a96d8.js",
     "static/js/787.a6f94ff8.chunk.js": "/MyPedYA/static/js/787.a6f94ff8.chunk.js",
     "index.html": "/MyPedYA/index.html",
-    "main.1827b88f.css.map": "/MyPedYA/static/css/main.1827b88f.css.map",
-    "main.03f6eb91.js.map": "/MyPedYA/static/js/main.03f6eb91.js.map",
+    "main.1f5c0a82.css.map": "/MyPedYA/static/css/main.1f5c0a82.css.map",
+    "main.762a96d8.js.map": "/MyPedYA/static/js/main.762a96d8.js.map",
     "787.a6f94ff8.chunk.js.map": "/MyPedYA/static/js/787.a6f94ff8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1827b88f.css",
-    "static/js/main.03f6eb91.js"
+    "static/css/main.1f5c0a82.css",
+    "static/js/main.762a96d8.js"
   ]
 }
